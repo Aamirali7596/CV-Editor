@@ -1,170 +1,89 @@
 # Setup & First Run Guide
 
-## What's New
-
-✅ **tailor_resume.py** - Stable two-step workflow with Claude
-✅ **README.md** - Complete documentation
-✅ **jd/** folder - Place your job descriptions here (optional)
-✅ **.gitignore** updated - Excludes sensitive files
-
 ## One-Time Setup
 
-1. **Install dependencies**
+1. **Install Python dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Get your Claude API key**
-   - Visit https://console.anthropic.com/ (or https://openrouter.ai/ for OpenRouter)
-   - Create account / log in
-   - Generate API key
-
-3. **Set API Key** (Choose ONE method)
-
-   **Method A: .env file (Recommended)**
-   ```powershell
-   # Create .env file in project root with:
-   ANTHROPIC_API_KEY=your-key-here
-   
-   # Or for OpenRouter:
-   ANTHROPIC_AUTH_TOKEN=your-openrouter-key
-   ANTHROPIC_BASE_URL=https://openrouter.ai/api
-   ANTHROPIC_MODEL=anthropic/claude-3-5-haiku:free
-   ```
-
-   **Method B: Environment variable**
-   ```powershell
-   # Windows PowerShell:
-   $env:ANTHROPIC_API_KEY="your-key-here"
-   
-   # Windows CMD:
-   set ANTHROPIC_API_KEY=your-key-here
-   
-   # Linux/Mac:
-   export ANTHROPIC_API_KEY="your-key-here"
-   ```
-
-   **Method C: Permanent system variable**
-   - Press `Win + X` → System → Advanced system settings
-   - Click "Environment Variables"
-   - Under "User variables" → New
-   - Name: `ANTHROPIC_API_KEY`, Value: `your-key`
-   - OK → OK → OK
-   - **Restart your terminal**
-
-4. **Verify your template exists**
+2. **Prepare your resume template**
    ```bash
    python rebuild_cv.py
    ```
-   This creates `AamirAli_Resume_ATS.docx` if you haven't already.
+   This creates `AamirAli_Resume_ATS.docx` - your ATS-friendly resume template.
 
-## How to Use (Daily)
+## How to Use
 
-### Step 1: Generate Prompt
+### For each job application:
 
-For each job you want to apply to:
-
-1. Copy the full job description text (or have it in a file)
-2. Run the prep command:
+1. **Generate the prompt**
    ```bash
    python tailor_resume.py --mode prep --jd job_description.txt
    ```
-   Or manually paste:
+   Or paste the JD interactively:
    ```bash
    python tailor_resume.py --mode prep
    ```
-3. Copy the generated prompt from `prompt.txt`
-4. Paste into Claude's chat at https://claude.ai
-5. Wait for Claude's response containing the JSON
 
-### Step 2: Apply Tailored Resume
+2. **Get Claude's tailored response**
+   - Open https://claude.ai in your browser
+   - Copy contents of `prompt.txt`
+   - Paste into Claude and send
+   - Copy Claude's complete JSON reply
 
-1. Copy Claude's full JSON response
-2. Save it as `response.json` in the project root
-3. Run:
-   ```bash
-   python tailor_resume.py --mode apply
-   ```
-4. Find your tailored resume in `generated_resumes/` as `.docx` and `.pdf`
+3. **Apply the response**
+   - Save Claude's JSON as `response.json` in this folder
+   - Run:
+     ```bash
+     python tailor_resume.py --mode apply
+     ```
+   - Find your tailored resume in `generated_resumes/`
 
-### Optional: Check ATS Compliance
-
-Verify your generated resume is ATS-friendly:
-```bash
-python tailor_resume.py --mode check --doc generated_resumes/Your_Company.docx
-```
+4. **Review**
+   - Open the generated `.docx` and verify formatting
+   - Check ATS compliance (optional):
+     ```bash
+     python tailor_resume.py --mode check --doc generated_resumes/Your_Company.docx
+     ```
 
 ## Tips
 
-- **Quality JDs:** Use the full job description, not just bullet points
-- **ATS Score:** The JSON response includes `ats_match_percentage`. Aim for 80%+
-- **Review:** Always open the generated .docx and verify formatting before submitting
-- **Iterate:** If ATS score is low, consider adding missing keywords to your `CV_CONTENT` permanently and re-run
+- Use the full job description text for best results
+- The JSON response includes an ATS match percentage - aim for 80%+
+- If score is low, add missing keywords to your `CV_CONTENT` in `tailor_resume.py` and re-run
+- Always review the final resume before submitting
 
 ## Troubleshooting
 
-**"ANTHROPIC_API_KEY not found"**
-→ Set it as shown in Step 3 above. Verify with `echo %ANTHROPIC_API_KEY%` (CMD) or `echo $env:ANTHROPIC_API_KEY` (PowerShell).
-
 **"Template not found: AamirAli_Resume_ATS.docx"**
-→ Run `python rebuild_cv.py` first to create the ATS template.
+→ Run `python rebuild_cv.py` to create it.
 
 **PDF not generated**
-→ Install [MS Word](https://www.microsoft.com/) or [LibreOffice](https://www.libreoffice.org/)
-→ Or manually convert .docx to PDF using Google Docs/online converter
-→ The .docx is always generated even if PDF fails
+→ Install MS Word or LibreOffice, or convert manually using online tools.
+The `.docx` file is always created even if PDF fails.
 
-**JSON parse errors**
-→ Make sure you're copying Claude's full JSON response (no extra commentary)
-→ The script automatically strips markdown fences if Claude adds them
-→ If errors persist, check the raw output in `debug_claude_response.txt`
+**JSON parse error**
+→ Ensure you copied Claude's full JSON response (no extra commentary before/after).
+The script automatically handles markdown code fences.
 
-**Rate limits**
-→ Anthropic/OpenRouter has rate limits based on your plan
-→ If you hit limits, wait a minute and retry or upgrade your plan
-
-**Import errors**
-→ `pip install -r requirements.txt` to ensure all dependencies are installed
-
-## File Reference
+## File Structure
 
 ```
 Resume_editor/
-├── AamirAli_Resume_ATS.docx      # Your ATS-friendly template (untracked)
-├── tailor_resume.py              # Main script (2-step workflow)
-├── rebuild_cv.py                 # Rebuild template from original
-├── requirements.txt              # Python dependencies
-├── jd/                           # Job description files (optional)
-│   └── example_job.txt
+├── AamirAli_Resume_ATS.docx      # Your resume template
+├── tailor_resume.py              # Main script
+├── rebuild_cv.py                 # Template builder
+├── requirements.txt              # Dependencies
 ├── prompt.txt                    # Generated (temporary)
-├── response.json                 # Claude's JSON reply (temporary, gitignored)
-└── generated_resumes/            # Tailored resumes (created)
-    └── Company_Role.docx
+├── response.json                 # Claude's reply (temporary, gitignored)
+├── jd/                           # Optional: store job descriptions
+└── generated_resumes/            # Output folder (created)
 ```
 
-## Cost Estimate
+## Notes
 
-**Claude pricing (as of 2025):**
-- Sonnet 3.5: ~$3 per 1M input tokens, $15 per 1M output
-- Haiku 3.5: ~$0.25 per 1M input, $1.25 per 1M output
-
-**Typical cost per JD:**
-- Input: ~2k tokens (resume + JD) + Output: ~1k tokens
-- Haiku: ~$0.001 per JD
-- Sonnet: ~$0.015 per JD
-
-So 100 job applications = ~$1 (Haiku) to ~$15 (Sonnet).
-
-## Next Steps
-
-1. Set your `ANTHROPIC_API_KEY`
-2. Run `python rebuild_cv.py` to create template
-3. Prepare a job description file or copy one to clipboard
-4. Run: `python tailor_resume.py --mode prep --jd your_job.txt`
-5. Paste prompt into Claude, save response as `response.json`
-6. Run: `python tailor_resume.py --mode apply`
-7. Check `generated_resumes/` for your tailored resume
-
----
-
-**Questions?** See README.md for more details.
+- No API key required - uses Claude's web interface
+- All processing happens locally on your machine
+- Your resume content stays private (only JD is sent to Claude)
+- The `generated_resumes/` folder can be gitignored - it contains tailored versions
