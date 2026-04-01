@@ -1,0 +1,7 @@
+
+*.docx
+generated_resumes/
+__pycache__/
+*.pyc
+*.log
+.env
