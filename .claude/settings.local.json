@@ -15,7 +15,14 @@
       "Bash(cd:*)",
       "Bash(python -c \"from batch_process import *; print\\(''✓ batch_process imports OK''\\)\")",
       "Bash(python -c \"from batch_process import *; print\\(''imports OK''\\)\")",
-      "Bash(python batch_process.py --dry-run)"
+      "Bash(python batch_process.py --dry-run)",
+      "Bash(pip install:*)",
+      "Bash(python test_openrouter.py)",
+      "Bash(python batch_process.py --openrouter --dry-run)",
+      "Bash(python test_connection.py)",
+      "Bash(python batch_process.py --openrouter)",
+      "Bash(python:*)",
+      "Bash(ls -la *.txt)"
     ]
   }
 }

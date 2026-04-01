@@ -1,0 +1,26 @@
+The role
+
+We are looking for a hands-on Data Engineer / Backend Engineer to help build and evolve the data infrastructure that supports our credit and broader investment businesses. This role will sit at the intersection of data engineering, backend development, and business problem-solving, with a strong focus on reliability, scalability, and enabling better data access across the firm. You'll work closely with data scientists, engineers, and business stakeholders to design practical solutions that improve how we ingest, process, transform, and use data. A genuine interest in credit markets and financial data will help you thrive in the role.
+
+Responsibilities
+
+Design, build, and maintain robust data pipelines to ingest, process, and transform structured and unstructured data from multiple sources
+Develop and manage ETL workflows to ensure data is delivered accurately and on time to target systems
+Build and improve backend services, APIs, and data workflows that support the wider platform
+Monitor data quality, availability, and reliability, and proactively resolve issues as they arise
+Help evolve the data platform into clear, self-service tools that enable teams across the business to access and use data independently
+Work closely with data scientists, engineers, and business teams to understand requirements and deliver practical data solutions
+Build knowledge across a range of credit asset classes to support data modelling and business insights
+ Leverage AI coding tools (Claude, etc.) for brainstorming and development, as these tools have become critical for productivity
+
+
+Requirements
+
+Strong hands-on experience in data engineering, backend development, or a closely related technical role
+Proficiency in Python, with additional experience in at least one other programming language such as Go, Java, C#, or C++
+Strong SQL skills and good working knowledge of relational databases, ideally MySQL
+Experience building data pipelines, APIs, and data ingestion processes from external sources
+Familiarity with Git/GitLab and modern development practices
+Interest in finance, financial data, or credit markets
+Strong communication skills, curiosity, and a proactive, problem-solving mindset
+Ability to show previous work through projects, repositories, or other tangible examples

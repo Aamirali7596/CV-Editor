@@ -1,0 +1,48 @@
+Job Title: Senior Data Engineer
+
+Duties
+
+The Senior Data Engineer will be responsible for driving the design and delivery of high quality, reliable solutions to support the
+
+company's data initiatives. This role requires a deep understanding of modern data engineering best practices, strong problem-solving
+
+skills and the ability to work collaboratively with cross-functional teams.
+
+Essential
+
+SQL Server Proficiency:
+
+A strong understanding of Microsoft SQL Server and Structured Query Language (SQL) is crucial. The role requires working with databases, querying data and optimising performance.
+
+Data Warehouses & Data Modelling
+
+Strong experience with data warehouse and modelling concepts is essential with designing efficient and effective database structures. Understanding relationships, normalization and denormalization is expected.
+
+ETL (Extract, Transform, Load) Pipelines
+
+ Experience with ETL (and ELT) processes is vital. The role is responsible for extracting data from various sources, transforming
+
+it and loading it into data warehouses, etc.
+
+Problem-Solving Skills
+
+ As a data engineer, the role will encounter data discrepancies, performance issues and user queries. Strong problem-solving
+
+Abilities Are Essential.
+
+Security Awareness:
+
+ Understanding data security principles and compliance (such as GDPR) is crucial. This role handles corporate sensitive data and
+
+information.
+
+Insurance Industry Knowledge is required.
+
+Technologies:
+
+ Snowflake Data Cloud, with supporting technologies and tools, including FiveTran, DBT, Dataiku, Collibra(preferable).
+ Microsoft Azure technologies, including Synapse and DevOps.
+ Microsoft SQL Server technologies, including Master Data Services, SSIS, SSAS & SSRS.
+ Supporting tools/languages include Python & C#.
+ Microsoft Power BI.
+ Microsoft Office 365.

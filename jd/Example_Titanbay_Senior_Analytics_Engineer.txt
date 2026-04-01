@@ -1,9 +1,0 @@
-Company: Titanbay
-Role: Senior Analytics Engineer
-
-Job Description Template:
-[Paste full job description here]
-
-This file is an example. Replace it with actual job descriptions.
-Use filename format: CompanyName_Role.txt
-Example: Titanbay_Senior_Analytics_Engineer.txt
