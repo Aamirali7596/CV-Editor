@@ -1,0 +1,28 @@
+#sample Job description
+Company : AND DIGITAL
+
+Join us - and help us fulfil our mission to close the world’s digital skills gap.
+
+To strengthen AND's position as a leader in the data industry, we are seeking a Data Principal (hands on Architect) to lead the local Data & AI Practice and expand our Data capability. This pivotal role supporting the local club leadership requires a balance of leading on client, leading the data practice proposition in the local market and building upon our existing data skills and capability from your experience.  You will be working closely with ANDs global data practice team, your practice team and local leadership to drive growth and value for our clients deepening our client partnerships.  
+
+Your Leadership & Influence:
+
+Data Leadership: You have a proven track record of managing and inspiring teams. You excel at navigating the complexities of enterprise-scale problem solving, turning challenges into opportunities for our clients.
+Stakeholder Artistry: You are a master of client-facing delivery. You can translate complex data concepts into business value, managing multi-vendor environments with a focus on long-term partnership.
+Designing for People and Purpose: Your expertise goes beyond just building scalable architectures; you design systems with a focus on delivering value. You ensure that your extensible and scalable solutions are implemented because they consistently meet the evolving needs of both the business and its users.
+
+Your strategic mindset:
+
+Quality Advocate: You take personal pride in the integrity of your work. Beyond just fixing bugs, you champion quality assurance and performance tuning as a mindset, ensuring the data programs we build for our clients are robust, reliable, and respected.
+Industry Stewardship: You are a lifelong learner who keeps a pulse on industry standards and best practices.
+Partnership Focus: You champion relationships with technology partners, whether established or new, working collaboratively to deliver for clients.
+
+Your Technical Fluency:
+
+You lead by example. While your primary focus is strategic, you maintain the technical depth required to guide teams through the full Data Product Lifecycle:
+Technology breadth: You bring a seasoned perspective to both modern and traditional ecosystems—with extensive experience building data solutions using Microsoft Azure and/or AWS native services, with development to production experience in Snowflake, Databricks or Fabric, managing delivery with an Agile mindset. 
+Data Product mentality: You understand how to build Data Products ensuring that every pipeline and dataset is discoverable, addressable, and secure by design.
+Data capabilities: You understand the full lifecycle of data from data discovery, storage, pipelines, ETL, streaming through to how data is managed including data quality, metadata management and how data is used for applications and core decision making through advanced analytics.
+AI: You have a deep expertise or experience of AI, specifically how to build AI solutions in modern data platforms (Databricks/Snowflake). In addition to Microsoft Azure, leveraging core technologies in the AI Foundry ecosystem, understanding different business challenges require varied solutions from SLM’s to intelligent Agentic automation from LLM foundational models, Human in the Loop and MLOps.
+Data Architecture Design: You understand and know when to use the following data architecture design patterns RAG (Retrieval-Augmented-Generation), Serverless, DWH models, Data Mesh and Data Products.
+Hands on mindset: You speak the language of data fluently, whether it's Python, R, or SQL and are ready to jump in to provide solutions where required.
