@@ -103,11 +103,11 @@ Edit `CV_CONTENT` in `tailor_resume.py` to update your permanent skills and expe
 - CI/CD
 - Data techniques
 
-**Experience** includes 4 companies:
-1. Build A Rocket Boy (current)
-2. Castleton Commodities Int.
-3. Sodexo
-4. Wherescape USA
+**Experience** includes 4 companies for Example for the Sample :
+1. Company A (current)
+2. Company B
+3. Company C
+4. Company D
 
 After editing `CV_CONTENT`, also update the skills section in `AamirAli_Resume_ATS.docx` manually to keep them in sync.
 
