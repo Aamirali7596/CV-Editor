@@ -1,0 +1,81 @@
+{                    
+    "company_name": "Zilch",
+    "role_title": "Senior Analytics Engineer",                                                                  "ats_match_percentage": 93,
+    "missing_keywords": ["Dag Factory", "RBAC", "Snowflake cost optimisation", "technical debt refactoring",
+   "naming conventions / domain boundaries"],
+    "selection_likelihood": "High - candidate is an exceptional match with deep dbt domain ownership,
+  Snowflake, Apache Airflow DAG orchestration, Looker semantic layer, CI/CD, data governance with lineage,  
+  fintech domain depth across regulated environments (REMIT/EMIR at Castleton, fintech transactions at      
+  Sodexo), mentoring, and ML workflow enablement — covering every core and desirable requirement.",
+    "skills": {
+      "Programming Languages": "Python, SQL, C++",
+      "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+",
+      "Cloud Platforms": "AWS (S3, EC2, EMR, Glue, Redshift), Snowflake, Azure (Data Factory, Databricks,   
+  Synapse), GCP, Terraform",
+      "Data Engineering Tools": "DBT (Core/Cloud), Apache Airflow (DAGs, Dag Factory), Looker, Looker API,  
+  Fivetran, PySpark, Kafka, Data Vault 2.0, CDC, ELT, MLOps, Model Registry, Experiment Tracking, Model     
+  Versioning",
+      "CI/CD": "Git, CI/CD pipelines, Automated Testing, Code Linting, Code Reviews, RBAC, Azure DevOps,    
+  Agile/Scrum, L3 Support",
+      "Data techniques": "ETL, ELT, Analytics-Ready Data Marts, Data Modelling, Semantic Governance, Data   
+  Lineage, Data Governance, RBAC, Snowflake Cost Optimisation, Technical Debt Refactoring, Physical
+  Modelling, Data Warehousing, CDC, Reconciliation, Semantic Layers, Observability, Self-Service Analytics, 
+  Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback"
+    },
+    "experience": {
+      "Build A Rocket Boy": [
+        "Owned **dbt** modelling architecture across multiple domains, designing and evolving scalable      
+  **analytics-ready data marts** integrating 100+ source systems into a centralised **Snowflake** warehouse 
+  processing 120+ TB.",
+        "Led **dbt** platform migration owning **Snowflake** schema design, **ELT** pipelines, and **CI/CD**
+   with **automated testing**, code linting, and **code review** standards elevating analytics engineering  
+  quality.",
+        "Designed **Apache Airflow** DAG orchestration and alerting frameworks for **ELT** workflows using  
+  **Fivetran** and **Python**, with **observability** controls ensuring pipeline SLA adherence and incident 
+  response.",
+        "Strengthened **semantic governance** across **dbt** and **Looker** using the **Looker API**,       
+  enabling trusted **ML** workflow enablement and self-service analytics for 150+ stakeholders over
+  **Snowflake** data marts."
+      ],
+      "Castleton Commodities Int.": [
+        "Owned **dbt** domain modelling architecture in **Snowflake**, designing scalable **ELT** pipelines 
+  and **analytics-ready data marts** with **Apache Airflow** orchestration supporting 250+ TB of regulated  
+  fintech trading data.",
+        "Developed complex **SQL** transformation logic for pre-trade and market data, translating business 
+  and risk requirements into governed, analytics-ready datasets supporting P&L, mark-to-market, and VaR     
+  reporting.",
+        "Implemented **data governance** and **RBAC** security controls with **data lineage** tracking and  
+  audit-ready documentation, ensuring trusted, compliant analytics for 30+ front-office and risk
+  stakeholders.",
+        "Led structured **code reviews**, authored technical documentation, and mentored junior engineers on
+   **dbt** modelling standards, naming conventions, and **CI/CD** best practices, driving engineering       
+  culture improvements.",
+        "Integrated REMIT/EMIR regulatory datasets into governed **dbt** models with **data lineage**,      
+  auditability, and **semantic governance** controls using **Terraform**-managed infrastructure ensuring    
+  audit-ready compliance."
+      ],
+      "Sodexo": [
+        "Led **CDC**-based fintech **ELT** pipeline delivery using Azure ADF, **Fivetran**, and **PySpark**,
+   building **observability** and SLA adherence frameworks that reduced third-party tooling costs by 80%.", 
+        "Reported to CTO, owning fintech **analytics-ready data mart** architecture and delivering a        
+  self-service platform trusted across Product, Risk, and Finance for 1M+ daily business decisions.",       
+        "Designed orchestration pipelines with **CI/CD**, **automated testing**, code **linting**, and      
+  **data governance** controls, delivering reliable **ELT** workflows with structured incident response     
+  practices.",
+        "Mentored junior engineers and led **Data Vault 2.0** data modelling refactoring with rules engines,
+   enforcing naming conventions and governance standards, reducing technical debt and data redundancy by    
+  45%."
+      ],
+      "Wherescape USA": [
+        "Delivered multi-client **Snowflake** data warehouse migrations with performance tuning, **cost     
+  optimisation**, workload isolation, and **automated testing** ensuring SLA compliance for FTSE-scale      
+  enterprise clients.",
+        "Designed **Snowflake** external tables on **AWS** S3 for semi-structured data using physical       
+  modelling best practices and **SQL** query optimisation, producing scalable **ELT** datasets for
+  downstream consumers.",
+        "Authored **SQL** transformations and built incremental **ELT** pipelines for AMD Malaysia
+  migration, loading 1B records with 80% efficiency gain using **Git**-based version control and
+  **Agile/Scrum** delivery."
+      ]
+    }
+  }

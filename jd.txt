@@ -1,0 +1,102 @@
+Company : zilch 
+About The Role.
+
+
+
+We are seeking an experienced Senior Analytics Engineer to join our growing Data function at a pivotal stage of platform maturity.
+
+
+
+This role is central to shaping the next phase of our analytics ecosystem - designing scalable, high-quality decision-making data models, strengthening governance and reliability, and enabling insight-driven decision-making across Product, Risk, Finance, and Commercial teams.
+
+You will operate at the intersection of modelling architecture, workflow reliability, and technical standards, working closely with Data Analysts, Data Engineering, Data Science, Software Engineering, and senior business stakeholders.
+
+
+
+This is a hands-on senior individual contributor role with meaningful influence over our data architecture and engineering culture.
+
+
+
+If you are excited by building clean, scalable analytics systems in a fast-moving fintech environment - and want real ownership rather than narrow ticket execution - this role is for you.
+
+
+
+Day-to-day responsibilities.
+
+
+
+Domain Ownership & Analytics Modelling
+
+
+
+Own modelling architecture for one or more business domains, ensuring scalability, clarity, and long-term maintainability
+Design, build, and evolve high-quality dbt models and analytics-ready data marts
+Translate complex business and product requirements into robust, well-documented transformation logic
+Establish and enforce modelling standards, naming conventions, and domain boundaries
+Drive Snowflake performance optimisation and cost governance initiatives
+Lead structured refactoring initiatives to reduce technical debt and improve maintainability
+
+
+Workflow, Orchestration & Reliability
+
+
+
+Design and maintain Airflow DAGs and alerting frameworks (Dag Factory) to ensure reliable data workflows
+Own operational reliability for analytics pipelines, including incident response and SLA adherence
+Improve orchestration patterns, documentation standards, and monitoring practices
+Collaborate with Data Engineering to maintain clear separation between infrastructure ownership and analytics layer responsibilities
+
+
+Governance, Security & CI/CD
+
+
+
+Contribute to secure data access design and role-based access control (RBAC) frameworks
+Improve and maintain CI/CD processes for analytics workflows, ensuring safe and automated deployments
+Implement automated linting, testing, and code review standards to elevate engineering quality
+Strengthen lineage, documentation, and semantic governance across dbt and BI tooling
+Partner with stakeholders to ensure data definitions are consistent, trusted, and audit-ready
+
+
+Technical Leadership & Engineering Culture
+
+
+
+Provide senior technical leadership through structured code reviews, peer learning sessions, and documentation practices
+Mentor Analytics Engineers and Analysts transitioning into engineering-focused roles
+Act as a modelling and data architecture subject matter expert within the organisation
+Champion best practices in SQL, dbt, version control, and scalable analytics design
+
+
+Cross-Functional Systems Design
+
+
+
+Partner on strategic initiatives across Product, Risk, and Finance analytics infrastructure
+Ensure analytics considerations are embedded early in architectural decisions
+Influence how new systems integrate into the broader data platform
+
+
+What we're looking for...
+
+
+
+4+ years in Analytics Engineering, Data Engineering, or advanced Analytics roles
+Strong expertise in SQL and modern data modelling principles
+Strong expertise in dbt and advanced dbt concepts
+Strong experience working with Snowflake (or comparable cloud data warehouse)
+Experience building and maintaining orchestration workflows
+Solid understanding of CI/CD, Git-based workflows, and version-controlled deployments
+Experience designing secure data access models and governance controls
+Ability to communicate clearly with technical and non-technical stakeholders
+
+
+Desirable Skills & Experience
+
+
+
+Experience in fintech, payments, lending, or regulated environments
+Exposure to experimentation frameworks and product analytics ecosystems
+Experience driving cost optimisation in Snowflake environments
+Familiarity with Looker or other semantic BI layers
+Experience collaborating with Data Science teams to enable ML workflows
