@@ -24,6 +24,14 @@ from docx import Document
 from docx.oxml.ns import qn
 from lxml import etree
 
+# Load personal CV data from separate gitignored file
+try:
+    from my_cv_data import CV_CONTENT, COMPANIES
+except ImportError:
+    # Minimal fallback if my_cv_data.py is missing
+    CV_CONTENT = "=== SKILLS ===\n• Programming Languages: (add your skills)\n\n=== EXPERIENCE ===\n[1] Your Current Role | Your Company | Location | Dates\n• Your bullet point 1\n"
+    COMPANIES = ["Your Company"]
+
 # ─── CONFIGURATION ─────────────────────────────────────────────────────────────
 TEMPLATE_CV  = Path("AamirAli_Resume_ATS.docx")
 OUTPUT_DIR   = Path("generated_resumes")
@@ -33,43 +41,6 @@ RESPONSE_FILE = Path("response.json")
 # Namespace shortcut
 W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 XML_SPACE = "{http://www.w3.org/XML/1998/namespace}space"
-
-# Current CV content — used as context for Claude
-CV_CONTENT = """
-=== SKILLS ===
-• Programming Languages: Python, C++
-• Databases: CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+
-• Cloud Platforms: AWS (S3, EC2, EMR, Glue, Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, Terraform
-• Data Engineering Tools: DBT, PySpark, Kafka, Data Vault 2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking, Model Versioning
-• CI/CD: Git, CI/CD pipelines, Azure Function, Agile/Scrum, Automated Testing, L3 Support
-• Data techniques: ETL, ELT, Data Modelling, Physical Modelling, Data Ingestion, Data Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Semantic Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback
-
-=== EXPERIENCE ===
-
-[1] Senior Data Engineer | Build A Rocket Boy | London | 05/2025 - Current
-• Designed and developed DBT data models with semantic layers integrating 100+ source systems into a centralized Snowflake warehouse processing 120+ TB of structured and semi-structured data.
-• Led end-to-end migration from dbt Core CLI to dbt Fusion, independently owning the transition and establishing Snowflake target schemas, ELT pipelines, and CI/CD pipelines with automated testing.
-• Automated ELT workflows and near-real-time inference pipelines using Fivetran connectors and Python on Terraform-provisioned AWS, with feature drift monitoring and observability frameworks ensuring model and pipeline reliability.
-• Designed and deployed Gen AI model pipelines using MLOps best practices, establishing model deployment pipelines, model registry, experiment tracking, model versioning, and rollback procedures for production AI workloads over Snowflake.
-
-[2] Lead Data Engineer | Castleton Commodities Int. | London | 08/2024 - 04/2025
-• Architected and deployed scalable ELT pipelines in Snowflake, DBT, and AWS/Azure with CDC-based ingestion and Apache Airflow DAG orchestration, supporting Natural Gas and Power trading desks, settlements, and risk functions.
-• Developed near-real-time inference data pipelines and reconciliation transformations for pre-trade and market data (prices, positions, exposures, curves) supporting P&L reporting, mark-to-market, and VaR analysis.
-• Built rules-engine-driven data quality checks with feature drift monitoring and Power BI dashboards for front-office and risk stakeholders, delivering transparency into P&L, working capital, and trade settlements.
-• Provided L3 support and authored technical documentation for all data warehouse changes; developed hotfixes for production incidents and mentored junior developers on data engineering best practices.
-• Integrated regulatory reporting datasets (REMIT, EMIR) into governed data models ensuring full lineage, auditability, and compliance using Terraform-managed infrastructure.
-
-[3] Lead Data Engineer | Sodexo | London | 05/2023 - 01/2024
-• Led CDC-based data ingestion for the AMETA region using Azure ADF, Databricks, PySpark, and Fivetran-style connectors, building observability frameworks that eliminated third-party tools and reduced external app costs by 80%.
-• Reported directly to CTO as Engineering lead for designing and developing the fintech transaction self-service analytics platform, providing reconciliation and rich visual summary of 1M+ daily user decisions.
-• Designed Agile/Scrum-driven data pipelines using Azure Data Factory with an Orchestration framework and Azure Functions, delivering self-service analytics with observability controls and L3 support for the data warehouse.
-• Mentored junior developers and led Data Vault 2.0 physical modelling implementation with rules engines for data quality, reducing data redundancy and accelerating SDLC delivery cycles.
-
-[4] Data Engineer | Wherescape USA | (US Remote) | 07/2019 - 05/2023
-• BAT (British American Tobacco) - Implemented Data Migration scripts and Azure Synapse Migration with automated testing suites. Implemented multi-cluster Snowflake warehouses with workload isolation ensuring SLA compliance and L3 support.
-• Designed Snowflake external tables on S3 for semi-structured data (JSON, Parquet) using physical modelling best practices, integrating IoT/supply-chain feeds via ELT into core analytics pipelines.
-• AMD Malaysia - Migrated data warehouse from Informatica to Wherescape using Agile/Scrum methodology. Created SQL transformations from Oracle to SQL Server, built incremental ELT pipeline loading 1B records with 80% efficiency gain.
-"""
 
 SYSTEM_PROMPT = """You are an expert ATS resume optimizer and professional resume writer specializing in data engineering roles.
 Your job is to tailor resumes to specific job descriptions to maximize ATS keyword scores.
@@ -91,6 +62,12 @@ For skills: only add technologies that are adjacent to candidate's existing stac
 
 def build_prompt(jd_text: str) -> str:
     """Build the full prompt to paste into Claude chat."""
+    # Build experience schema dynamically from COMPANIES list to avoid hardcoding personal data
+    exp_schema_parts = []
+    for company in COMPANIES:
+        exp_schema_parts.append(f'    "{company}": [\n      "Bullet 1 — ~200 chars, past tense verb, JD keywords, metric",\n      "Bullet 2",\n      "Bullet 3",\n      "Bullet 4"\n    ]')
+    exp_schema = ",\n".join(exp_schema_parts)
+
     return f"""{SYSTEM_PROMPT}
 
 ---
@@ -119,21 +96,7 @@ Return ONLY a valid JSON object with this exact structure (no markdown, no expla
     "Data techniques": "ETL, ELT, Data Modelling, Physical Modelling, Data Ingestion, Data Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Semantic Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback, [add from JD]"
   }},
   "experience": {{
-    "Build A Rocket Boy": [
-      "Bullet 1 — ~200 chars, past tense verb, JD keywords, metric",
-      "Bullet 2",
-      "Bullet 3",
-      "Bullet 4"
-    ],
-    "Castleton Commodities Int.": [
-      "Bullet 1", "Bullet 2", "Bullet 3", "Bullet 4", "Bullet 5"
-    ],
-    "Sodexo": [
-      "Bullet 1", "Bullet 2", "Bullet 3", "Bullet 4"
-    ],
-    "Wherescape USA": [
-      "Bullet 1", "Bullet 2", "Bullet 3"
-    ]
+{exp_schema}
   }}
 }}"""
 
@@ -312,13 +275,6 @@ SKILL_CATEGORIES = [
     "Data Engineering Tools",
     "CI/CD",
     "Data techniques",
-]
-
-COMPANIES = [
-    "Build A Rocket Boy",
-    "Castleton Commodities Int.",
-    "Sodexo",
-    "Wherescape USA",
 ]
 
 

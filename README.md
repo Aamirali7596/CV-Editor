@@ -89,27 +89,116 @@ Resume_editor/
 
 All formatting (bold markers, bullet characters) is preserved.
 
-## Configuration
+## Setup: Customize for Your Resume
 
-### Update Your Skills
+### 1. Create Your Personal Data File
 
-Edit `CV_CONTENT` in `tailor_resume.py` to update your permanent skills and experience.
+Copy the example template and fill in your own resume information:
 
-**Skills categories:**
-- Programming Languages
-- Databases
-- Cloud Platforms
-- Data Engineering Tools
-- CI/CD
-- Data techniques
+```bash
+# Copy the template (if you don't have one already)
+# You'll need to create my_cv_data.py with YOUR resume content
+```
 
-**Experience** includes 4 companies:
-1. Build A Rocket Boy (current)
-2. Castleton Commodities Int.
-3. Sodexo
-4. Wherescape USA
+If `my_cv_data.py` doesn't exist, you can create it by copying this structure:
 
-After editing `CV_CONTENT`, also update the skills section in `AamirAli_Resume_ATS.docx` manually to keep them in sync.
+```python
+# my_cv_data.py - YOUR personal resume data (gitignored, never commit)
+
+CV_CONTENT = """
+=== SKILLS ===
+• Programming Languages: (your languages)
+• Databases: (your databases)
+...
+
+=== EXPERIENCE ===
+
+[1] Your Current Title | Your Company | Location | Dates
+• Your bullet point 1
+• Your bullet point 2
+...
+
+[2] Previous Role | Previous Company | Location | Dates
+• Bullet points...
+...
+
+[3] ... add more experience as needed
+"""
+
+COMPANIES = [
+    "Your Current Company",
+    "Previous Company 1",
+    "Previous Company 2",
+    "Previous Company 3",
+]
+```
+
+**Important:** `my_cv_data.py` is listed in `.gitignore` - never commit your personal resume data!
+
+### 2. Rename the Template File (Optional)
+
+The default template filename is `AamirAli_Resume_ATS.docx`. You have two options:
+
+**Option A: Keep the filename** (simplest)
+- Just replace the content of `AamirAli_Resume_ATS.docx` with YOUR resume formatted for ATS
+- The file is gitignored, so your personal file stays private
+
+**Option B: Rename to match your name**
+1. Rename the file to `YourName_Resume_ATS.docx` (replace `YourName` with your actual name)
+2. Update `tailor_resume.py` line 10:
+   ```python
+   TEMPLATE_CV = Path("YourName_Resume_ATS.docx")
+   ```
+3. Update `rebuild_cv.py` line 10 if you want it to create the correct filename
+
+**Why the specific naming?** If you're contributing back to the repository or maintaining your own fork, use the format: `FirstName_LastName_Resume_ATS.docx`
+
+### 3. Keep Skills in Sync
+
+After editing `my_cv_data.py`, also update the skills section in your template `.docx` file to match. Open `AamirAli_Resume_ATS.docx` (or your renamed version) and manually update the skills section to reflect your `CV_CONTENT`.
+
+## Contributing & Versioning
+
+### Git Workflow for Your Own Fork
+
+This tool is designed for personal use. If you want to maintain your own customized version:
+
+1. **Create a development branch** with your name and version:
+   ```bash
+   git checkout -b dev_YourName_v1_002
+   ```
+   (Replace `YourName` with your actual name and increment version from current)
+
+2. **Make your changes** (customize for your resume, add features, etc.)
+
+3. **Commit to your dev branch**:
+   ```bash
+   git add .
+   git commit -m "feat: customize for YourName's resume"
+   ```
+
+4. **Keep main branch clean**
+   - The `main` branch should contain the generic, shareable code without personal data
+   - Your personal `my_cv_data.py` and template file stay only in your dev branch or local
+
+### Version Numbering
+
+- Base version: `v1_001` (initial)
+- Your customized version: `v1_002` (increment the last 3 digits)
+- Use format: `vMAJOR_MINOR` (e.g., `v1_002`, `v1_003`)
+
+### Sharing Your Customized Version
+
+If you want to share improvements back:
+- Only share code changes, never your `my_cv_data.py` or `.docx` file
+- Document your changes in PRs or commits
+- Others can then apply those generic improvements to their own setup
+
+### Branch Naming Convention
+
+- `main` - clean, generic, production-ready code (no personal data)
+- `dev_YourName_v1_XXX` - your personal development branch with your resume
+- Feature branches: `feature/description` off your dev branch
 
 ### Change Output Directory
 

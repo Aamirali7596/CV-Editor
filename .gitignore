@@ -1,4 +1,11 @@
 
+# Personal data - never commit
+my_cv_data.py
+AamirAli_Resume_ATS.docx
+jd/
+jd.txt
+
+# Generated files
 *.docx
 generated_resumes/
 responses/
@@ -8,3 +15,6 @@ __pycache__/
 .env
 batch_summary.md
 debug_*.txt
+prompt.txt
+response.json
+
