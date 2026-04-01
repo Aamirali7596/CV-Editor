@@ -11,7 +11,11 @@
       "Bash(del:*)",
       "Bash(python patch_skills_v2.py)",
       "Bash(python patch_skills_v3.py)",
-      "Bash(rm patch_skills_v3.py)"
+      "Bash(rm patch_skills_v3.py)",
+      "Bash(cd:*)",
+      "Bash(python -c \"from batch_process import *; print\\(''✓ batch_process imports OK''\\)\")",
+      "Bash(python -c \"from batch_process import *; print\\(''imports OK''\\)\")",
+      "Bash(python batch_process.py --dry-run)"
     ]
   }
 }

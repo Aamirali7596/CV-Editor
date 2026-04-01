@@ -1,7 +1,10 @@
 
 *.docx
 generated_resumes/
+responses/
 __pycache__/
 *.pyc
 *.log
 .env
+batch_summary.md
+debug_*.txt

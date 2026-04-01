@@ -1,102 +1,27 @@
-Company : zilch 
-About The Role.
+Company : AND DIGITAL
 
+Join us - and help us fulfil our mission to close the world’s digital skills gap.
 
+To strengthen AND's position as a leader in the data industry, we are seeking a Data Principal (hands on Architect) to lead the local Data & AI Practice and expand our Data capability. This pivotal role supporting the local club leadership requires a balance of leading on client, leading the data practice proposition in the local market and building upon our existing data skills and capability from your experience.  You will be working closely with ANDs global data practice team, your practice team and local leadership to drive growth and value for our clients deepening our client partnerships.  
 
-We are seeking an experienced Senior Analytics Engineer to join our growing Data function at a pivotal stage of platform maturity.
+Your Leadership & Influence:
 
+Data Leadership: You have a proven track record of managing and inspiring teams. You excel at navigating the complexities of enterprise-scale problem solving, turning challenges into opportunities for our clients.
+Stakeholder Artistry: You are a master of client-facing delivery. You can translate complex data concepts into business value, managing multi-vendor environments with a focus on long-term partnership.
+Designing for People and Purpose: Your expertise goes beyond just building scalable architectures; you design systems with a focus on delivering value. You ensure that your extensible and scalable solutions are implemented because they consistently meet the evolving needs of both the business and its users.
 
+Your strategic mindset:
 
-This role is central to shaping the next phase of our analytics ecosystem - designing scalable, high-quality decision-making data models, strengthening governance and reliability, and enabling insight-driven decision-making across Product, Risk, Finance, and Commercial teams.
+Quality Advocate: You take personal pride in the integrity of your work. Beyond just fixing bugs, you champion quality assurance and performance tuning as a mindset, ensuring the data programs we build for our clients are robust, reliable, and respected.
+Industry Stewardship: You are a lifelong learner who keeps a pulse on industry standards and best practices.
+Partnership Focus: You champion relationships with technology partners, whether established or new, working collaboratively to deliver for clients.
 
-You will operate at the intersection of modelling architecture, workflow reliability, and technical standards, working closely with Data Analysts, Data Engineering, Data Science, Software Engineering, and senior business stakeholders.
+Your Technical Fluency:
 
-
-
-This is a hands-on senior individual contributor role with meaningful influence over our data architecture and engineering culture.
-
-
-
-If you are excited by building clean, scalable analytics systems in a fast-moving fintech environment - and want real ownership rather than narrow ticket execution - this role is for you.
-
-
-
-Day-to-day responsibilities.
-
-
-
-Domain Ownership & Analytics Modelling
-
-
-
-Own modelling architecture for one or more business domains, ensuring scalability, clarity, and long-term maintainability
-Design, build, and evolve high-quality dbt models and analytics-ready data marts
-Translate complex business and product requirements into robust, well-documented transformation logic
-Establish and enforce modelling standards, naming conventions, and domain boundaries
-Drive Snowflake performance optimisation and cost governance initiatives
-Lead structured refactoring initiatives to reduce technical debt and improve maintainability
-
-
-Workflow, Orchestration & Reliability
-
-
-
-Design and maintain Airflow DAGs and alerting frameworks (Dag Factory) to ensure reliable data workflows
-Own operational reliability for analytics pipelines, including incident response and SLA adherence
-Improve orchestration patterns, documentation standards, and monitoring practices
-Collaborate with Data Engineering to maintain clear separation between infrastructure ownership and analytics layer responsibilities
-
-
-Governance, Security & CI/CD
-
-
-
-Contribute to secure data access design and role-based access control (RBAC) frameworks
-Improve and maintain CI/CD processes for analytics workflows, ensuring safe and automated deployments
-Implement automated linting, testing, and code review standards to elevate engineering quality
-Strengthen lineage, documentation, and semantic governance across dbt and BI tooling
-Partner with stakeholders to ensure data definitions are consistent, trusted, and audit-ready
-
-
-Technical Leadership & Engineering Culture
-
-
-
-Provide senior technical leadership through structured code reviews, peer learning sessions, and documentation practices
-Mentor Analytics Engineers and Analysts transitioning into engineering-focused roles
-Act as a modelling and data architecture subject matter expert within the organisation
-Champion best practices in SQL, dbt, version control, and scalable analytics design
-
-
-Cross-Functional Systems Design
-
-
-
-Partner on strategic initiatives across Product, Risk, and Finance analytics infrastructure
-Ensure analytics considerations are embedded early in architectural decisions
-Influence how new systems integrate into the broader data platform
-
-
-What we're looking for...
-
-
-
-4+ years in Analytics Engineering, Data Engineering, or advanced Analytics roles
-Strong expertise in SQL and modern data modelling principles
-Strong expertise in dbt and advanced dbt concepts
-Strong experience working with Snowflake (or comparable cloud data warehouse)
-Experience building and maintaining orchestration workflows
-Solid understanding of CI/CD, Git-based workflows, and version-controlled deployments
-Experience designing secure data access models and governance controls
-Ability to communicate clearly with technical and non-technical stakeholders
-
-
-Desirable Skills & Experience
-
-
-
-Experience in fintech, payments, lending, or regulated environments
-Exposure to experimentation frameworks and product analytics ecosystems
-Experience driving cost optimisation in Snowflake environments
-Familiarity with Looker or other semantic BI layers
-Experience collaborating with Data Science teams to enable ML workflows
+You lead by example. While your primary focus is strategic, you maintain the technical depth required to guide teams through the full Data Product Lifecycle:
+Technology breadth: You bring a seasoned perspective to both modern and traditional ecosystems—with extensive experience building data solutions using Microsoft Azure and/or AWS native services, with development to production experience in Snowflake, Databricks or Fabric, managing delivery with an Agile mindset. 
+Data Product mentality: You understand how to build Data Products ensuring that every pipeline and dataset is discoverable, addressable, and secure by design.
+Data capabilities: You understand the full lifecycle of data from data discovery, storage, pipelines, ETL, streaming through to how data is managed including data quality, metadata management and how data is used for applications and core decision making through advanced analytics.
+AI: You have a deep expertise or experience of AI, specifically how to build AI solutions in modern data platforms (Databricks/Snowflake). In addition to Microsoft Azure, leveraging core technologies in the AI Foundry ecosystem, understanding different business challenges require varied solutions from SLM’s to intelligent Agentic automation from LLM foundational models, Human in the Loop and MLOps.
+Data Architecture Design: You understand and know when to use the following data architecture design patterns RAG (Retrieval-Augmented-Generation), Serverless, DWH models, Data Mesh and Data Products.
+Hands on mindset: You speak the language of data fluently, whether it's Python, R, or SQL and are ready to jump in to provide solutions where required.
