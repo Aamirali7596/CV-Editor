@@ -89,10 +89,10 @@ Return ONLY a valid JSON object with this exact structure (no markdown, no expla
   "selection_likelihood": "Low/Medium/High - one sentence reason",
   "skills": {{
     "Programming Languages": "Python, C++, [add from JD if relevant]",
-    "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+, [add from JD]",
-    "Cloud Platforms": "AWS (S3, EC2, EMR, Glue, Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, Terraform, [add from JD]",
-    "Data Engineering Tools": "DBT, PySpark, Kafka, Data Vault 2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking, Model Versioning, [add from JD]",
-    "CI/CD": "Git, CI/CD pipelines, Azure Function, Agile/Scrum, Automated Testing, L3 Support, [add from JD]",
+    "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+, SQL Server, Aurora PostgreSQL, [add from JD]",
+    "Cloud Platforms": "AWS (S3, EC2, EMR, EMR Serverless, Glue, Lambda, Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, Terraform, [add from JD]",
+    "Data Engineering Tools": "DBT, PySpark, Kafka, Data Vault 2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, Apache Iceberg, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking, Model Versioning, [add from JD]",
+    "CI/CD": "Git, GitHub Actions, CI/CD pipelines, Azure Function, Agile/Scrum, Automated Testing, pytest, L3 Support, [add from JD]",
     "Data techniques": "ETL, ELT, Data Modelling, Physical Modelling, Data Ingestion, Data Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Semantic Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback, [add from JD]"
   }},
   "experience": {{

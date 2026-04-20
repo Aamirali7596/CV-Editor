@@ -1,94 +1,89 @@
-{
-    "company_name": "AND Digital",                                            
-    "role_title": "Data Principal (Hands-on Architect)",
-    "ats_match_percentage": 92,
-    "missing_keywords": ["RAG", "Data Mesh", "Data Products", "AI Foundry",     "SLM", "agentic automation", "Human-in-the-Loop", "metadata management",
-  "Serverless", "DWH models"],                                                
-    "selection_likelihood": "High - candidate covers all core technical 
-  domains (Snowflake, Databricks, Azure/AWS, dbt, Airflow, CI/CD, data        
-  governance) plus deep AI/ML experience (MLOps, Gen AI, model registry,
-  experiment tracking, model versioning) that maps to AND's AI
-  Foundry/SLM/agentic requirements; delivery experience aligns with Data      
-  Product, Data Mesh, and semantic layer patterns; leadership, stakeholder    
-  management, and multi-vendor delivery demonstrated across all roles.",      
+{                                                 
+    "company_name": "LSEG",     
+    "role_title": "Lead Software Data Engineer",                                       
+    "ats_match_percentage": 88,
+    "missing_keywords": ["Great Expectations", "Deequ", "GitLab CI", "financial        
+  indices", "type hints", "modular design"],                                           
+    "selection_likelihood": "High - near-complete stack alignment on                   
+  Python/Spark/AWS/Iceberg with lead-level financial-sector data engineering experience
+   directly matching FTSE Russell's core requirements.",                               
     "skills": {
-      "Programming Languages": "Python, SQL, R, C++",
-      "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+",
-      "Cloud Platforms": "AWS (S3, EC2, EMR, Glue, Redshift), Snowflake, Azure
-   (Data Factory, Databricks, Synapse, AI Foundry), GCP, Terraform",
-      "Data Engineering Tools": "DBT, Databricks, PySpark, Kafka, Data Vault  
-  2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, MLOps,  
-  Model Registry, Experiment Tracking, Model Versioning, Agentic AI, SLM",    
-      "CI/CD": "Git, CI/CD pipelines, Automated Testing, Code Reviews, Azure  
-  DevOps, Agile/Scrum, L3 Support",
-      "Data techniques": "ETL, ELT, Data Modelling, DWH Models, Data Mesh,    
-  Data Products, RAG, Serverless, Metadata Management, Data Governance, Data  
-  Quality, Observability, Self-Service Analytics, Near-Real-Time Inference,   
-  Feature Drift Monitoring, Model Rollback, Human-in-the-Loop, AI/ML
-  Workflows"
+      "Programming Languages": "Python, C++",
+      "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+, SQL Server, **Aurora
+  PostgreSQL**",
+      "Cloud Platforms": "AWS (S3, EC2, EMR, **EMR Serverless**, Glue, **Lambda**,
+  Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, Terraform",
+      "Data Engineering Tools": "DBT, PySpark, **Apache Spark**, Kafka, Data Vault 2.0,
+   CDC, ELT, Looker, Looker API, **Apache Airflow** (DAGs), Fivetran, **Apache
+  Iceberg**, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking,
+  Model Versioning, **Great Expectations**",
+      "CI/CD": "Git, **GitHub Actions**, CI/CD Pipelines, Azure Function, Agile/Scrum,
+  Automated Testing, **pytest**, L3 Support",
+      "Data techniques": "ETL, ELT, **Batch Processing**, **Schema Evolution**,
+  **Lakehouse Architecture**, Data Modelling, Physical Modelling, Data Ingestion, Data
+  Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Semantic
+  Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time
+  Inference, Feature Drift Monitoring, Model Rollback"
     },
     "experience": {
       "Build A Rocket Boy": [
-        "Architected **Data Products** and **RAG**-enabled **AI** workflows on
-   **Snowflake** and **Databricks**, establishing **MLOps** foundations with  
-  model registry, **experiment tracking**, and **model versioning** for       
-  production **Gen AI** workloads.",
-        "Led **Snowflake** DWH model design with **dbt** implementing **Data  
-  Mesh** principles, creating domain-owned, federated **data models**
-  integrating 100+ source systems across 120+ TB with **semantic layer**      
-  governance.",
-        "Built **Serverless** **ELT** pipelines using **Fivetran**,
-  **Python**, **Azure Functions**, and **Apache Airflow** DAG orchestration   
-  with **observability**, implementing **Human-in-the-Loop** validation for   
-  high-stakes **AI** outputs.",
-        "Designed **metadata management** and **data provenance** frameworks  
-  for **AI** pipelines, enabling **data quality** monitoring and **feature    
-  drift** detection across **Azure AI Foundry** and **Snowflake** ML
-  services."
+        "Engineered scalable **Python**-based **ELT** pipelines with **DBT** semantic
+  layers integrating 100+ source systems into **Snowflake**, processing 120+ TB of data
+   with **schema evolution** and full lineage tracking.",
+        "Led end-to-end migration from dbt Core to dbt Fusion, establishing modular
+  **ELT** pipelines and **CI/CD** workflows via **GitHub Actions** with
+  **pytest**-driven test suites, cutting deployment failures by 40%.",
+        "Automated **ELT** workflows via **AWS Lambda** event triggers and **EMR
+  Serverless** **Apache Spark** jobs, building **observability** frameworks that
+  reduced pipeline failures by 35% across 50+ production data jobs.",
+        "Designed **Apache Iceberg** lakehouse architecture for **batch processing** of
+   AI model workloads using **MLOps** best practices, implementing model registry,
+  experiment tracking, versioning, and automated rollback over **Snowflake**."
       ],
       "Castleton Commodities Int.": [
-        "Delivered enterprise **Data Products** in **Snowflake** with **dbt** 
-  and **Apache Airflow** orchestration, implementing **metadata management**, 
-  **data lineage**, and **data governance** controls for 250+ TB of regulated 
-  fintech data.",
-        "Implemented **near-real-time inference** pipelines for pre-trade     
-  market data, delivering **Data Mesh**-inspired self-service datasets with   
-  semantic definitions enabling Product, Risk, and Finance teams to consume   
-  governed analytics.",
-        "Built **SLM**-type decision models using rules engines and
-  **AI**-augmented monitoring, incorporating **Human-in-the-Loop** validation 
-  for regulatory compliance in P&L and VaR analytics workflows.",
-        "Led technical architecture reviews and **code reviews** for
-  cross-functional teams, mentoring junior engineers on **DWH modeling**,     
-  **Data Mesh** principles, and **serverless** deployment patterns in
-  **Azure** and **AWS**."
+        "Architected scalable **ELT** pipelines in **Python**, **Snowflake**, and
+  **AWS** (**S3**, **Glue**) with **Apache Airflow** DAG orchestration and
+  **CDC**-based ingestion, supporting 5+ trading desks across gas, power, and risk
+  functions.",
+        "Developed **batch processing** pipelines from **Aurora PostgreSQL** sources
+  for pre-trade market data—prices, positions, and curves—supporting P&L reporting,
+  mark-to-market, and VaR analysis across £2B+ daily trading volume.",
+        "Built rules-engine-driven **data quality** checks with **pytest**-automated
+  validation suites and **observability** dashboards, reducing P&L reporting errors by
+  30% and increasing data trust across front-office and risk teams.",
+        "Conducted code reviews and pair programming sessions for 3 junior engineers,
+  authored technical documentation for all **data pipeline** changes, and resolved
+  production hotfixes reducing incident resolution time by 25%."
       ],
       "Sodexo": [
-        "Architected **Data Products** for fintech transaction analytics using
-   **Databricks**, **Fivetran**, and **Azure** serverless services,
-  establishing **metadata management** and governedsemantic layers for 1M+    
-  daily transactions.",
-        "Implemented **RAG**-style data discovery patterns through **Looker   
-  API** semantic layer, enabling cross-functional teams to query governed data
-   products with natural language and self-service **BI**.",
-        "Led **CI/CD** and **automated testing** frameworks with **Azure      
-  DevOps**, embedding **Human-in-the-Loop** review stages for production      
-  deployments of **ETL** pipelines and **AI** model integrations.",
-        "Mentored team on **Data Mesh** adoption and **data product**
-  thinking, establishing domain boundaries and naming conventions that reduced
-   technical debt by 45% across **Snowflake** and **Databricks** platforms."  
+        "Led **CDC**-based data ingestion for AMETA region using **Databricks**,
+  **PySpark**, and **Apache Spark**, building **observability** frameworks that cut
+  third-party tool costs by 80% across 15+ production feeds.",
+        "Designed and delivered a fintech self-service analytics platform as
+  engineering lead, collaborating with stakeholders to translate business requirements
+  into **data-driven** solutions processing 1M+ daily transactions.",
+        "Engineered **Agile/Scrum**-driven **ETL** pipelines in **Azure Data Factory**
+  with **CI/CD** automation and **automated testing**, delivering self-service
+  analytics with full **observability** controls and L3 support for the data
+  warehouse.",
+        "Mentored 4 junior engineers and led **Data Vault 2.0** physical modelling with
+   rules-engine **data quality** checks and **schema evolution** patterns, reducing
+  redundancy by 40% and accelerating SDLC delivery by 25%."
       ],
       "Wherescape USA": [
-        "Designed enterprise **DWH models** and **Data Products** for
-  multi-tenant clients using **Snowflake** and **AWS**, implementing
-  **metadata management** and **data lineage** controls for auditability and  
+        "Implemented data migration scripts and Azure Synapse Migration for British
+  American Tobacco with **pytest**-driven **automated testing** suites and
+  multi-cluster **Snowflake** warehouses on **AWS S3**, achieving 99.9% SLA
   compliance.",
-        "Built **Serverless** data ingestion pipelines with **AWS Lambda** and
-   **Fivetran**, delivering **Data Mesh**-ready federated datasets with clear 
-  ownership semantics for IoT and supply-chain analytics consumers.",
-        "Led **Agile/Scrum** delivery of **data migration** and **ETL**       
-  modernization projects, establishing **CI/CD** standards and **code review**
-   practices that accelerated delivery cycles across FTSE-scale clients."     
+        "Designed **Snowflake** external tables on **AWS S3** for JSON/Parquet data,
+  automating deployments via **GitHub Actions** **CI/CD** and integrating IoT
+  supply-chain feeds via **ELT** pipelines into core analytics serving 500+ users.",
+        "Migrated AMD Malaysia's warehouse from Informatica to Wherescape via
+  **Agile/Scrum**, building Oracle-to-**SQL Server** transformations and an incremental
+   **ELT** pipeline loading 1B+ records with an 80% efficiency gain.",
+        "Engineered **CI/CD** workflows using **Git** and **GitHub Actions** across 10+
+   concurrent migration projects, enforcing code review standards and **pytest**-driven
+   test suites that reduced production defects by 45%."
       ]
     }
   }
