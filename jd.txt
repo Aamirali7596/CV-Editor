@@ -1,55 +1,43 @@
-Company: LSEG
+Company : Projective
+We’re hiring multiple Data Consultants across a range of experience levels. Whether you’re already delivering confidently on client engagements or stepping into a more senior role, we’re interested in people who combine financial services knowledge, solid stakeholder skills, and a practical approach to data.
 
-Ready to build scalable data systems with real-world impact?
+This role is about more than analysis. It’s about working at the intersection of business and technology, helping clients define problems, shape solutions, and deliver meaningful change across transformation, regulatory, and data-led initiatives.
 
-Join us at FTSE Russell! We’re establishing a team of engineers passionate about data, software craftsmanship, and substantial impact. As a Lead Software Data Engineer, you’ll help power the indices trusted by financial institutions worldwide. You’ll work in a modern AWS environment, build robust pipelines, and collaborate closely with product and business teams to deliver reliable, high-quality data solutions. We care about code quality, ownership, and helping each other grow. If you’re excited about building systems that matter, we’d love to meet you!
 
-WHAT YOU'LL BE DOING:
 
-We are building the next-generation data platform at FTSE Russell — and we want you to shape it with us. Your role will involve:
+At Projective Group, we partner with financial services organisations to solve complex challenges across data, transformation, risk, and payments. As we continue to grow our Data practice, we’re looking for consultants who can span the spectrum from Data Management through using data as a tool to steer better decisions and outcomes.
 
-Designing and developing scalable, testable data pipelines using Python and Apache Spark
 
-Orchestrating data workflows with AWS tools like Glue, EMR Serverless, Lambda, and S3
 
-Applying modern software engineering practices: version control, CI/CD, modular design, and automated testing
+Bring Your Expertise to Life at Projective Group; imagine a day where you:
 
-Contributing to the development of a lakehouse architecture using Apache Iceberg
+Work with clients to understand complex business challenges.
+Translate business needs into clear, structured requirements, guiding technical teams while keeping solutions grounded in real-world context.
+Take ownership of workstreams across data initiatives, from requirements through to delivery support.
+Use tools such as SQL or Python to explore data, validate outputs, and visualise and create compelling outputs to support both business and technical discussions.
+Challenge assumptions, identify improvements, and help design pragmatic, fit-for-purpose solutions.
+Support clients exploring AI adoption, identifying realistic use cases and how these align to their data landscape.
+Build robust relationships with clients and colleagues, contributing to a collaborative and in-person consulting environment.
 
-Collaborating with business teams to translate requirements into data-driven solutions
 
-Building observability into data flows and implementing basic quality checks
+Is this you?
 
-Participating in code reviews, pair programming, and architecture discussions
+Experience within a financial services consultancy, with a track record of delivering on client engagements.
+Comfortable operating between business and technology, engaging stakeholders while working closely with technical teams.
+Solid experience gathering and structuring requirements, with the flexibility to support both business analysis and project delivery.
+Understanding of domains such as banking, capital markets, or insurance, and how data supports decision-making.
+Practical experience with SQL, Python, or low-code tools, using them to support delivery rather than as a pure technical focus.
+Able to manage priorities, take ownership, and adapt across different clients and engagements.
+Naturally inquisitive, confident in asking questions and challenging thinking to add value.
+Degree educated or equivalent experience, with project management exposure or certifications as a plus.
 
-Continuously learning about the financial indices domain and sharing insights with the team
 
-WHAT YOU'LL BRING:
+Why join Projective Group?
 
-Writes clean, maintainable, testable, extensible Python code (ideally with type hints, linters, and tests like pytest)
-
-Understands data engineering basics: batch processing, schema evolution, and building ETL pipelines
-
-Has experience with or is eager to learn Apache Spark for large-scale data processing
-
-Is familiar with the AWS data stack (e.g. S3, Glue, Lambda, EMR)
-
-Strong experience in relational databases (e.g. Aurora PostgreSQL)
-
-Enjoys learning the business context and working closely with stakeholders
-
-Works well in Agile teams and values collaboration over solo heroics
-
-NICE TO HAVES:
-
-It’s great (but not required) if you also bring:
-
-Experience with Apache Iceberg or similar table formats
-
-Familiarity with CI/CD tools like GitLab CI, Jenkins, or GitHub Actions
-
-Exposure to data quality frameworks like Great Expectations or Deequ
-
-Experience with other data platforms like databricks, etc.
-
-Curiosity about financial markets, index data, or investment analytics
+A collaborative environment with no unnecessary organisational structure.
+The opportunity to work across a range of financial services clients and transformation programmes, including regulatory change, data modernisation, and operational improvement initiatives.
+Early exposure to meaningful client work, with the independence to take ownership and contribute from day one.
+A generous training budget, supporting both technical and consulting development.
+A culture focused on pragmatism, collaboration, and delivering meaningful impact.
+Competitive salary, bonus structure, and a comprehensive benefits package including healthcare and pension.
+A London office in the heart of the city, designed to support collaboration and connection.

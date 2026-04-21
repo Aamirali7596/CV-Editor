@@ -18,61 +18,49 @@ For skills: only add technologies that are adjacent to candidate's existing stac
 Analyze this job description and tailor the resume to maximize ATS score.
 
 JOB DESCRIPTION:
-Company: LSEG
+Company : Projective
+We’re hiring multiple Data Consultants across a range of experience levels. Whether you’re already delivering confidently on client engagements or stepping into a more senior role, we’re interested in people who combine financial services knowledge, solid stakeholder skills, and a practical approach to data.
 
-Ready to build scalable data systems with real-world impact?
+This role is about more than analysis. It’s about working at the intersection of business and technology, helping clients define problems, shape solutions, and deliver meaningful change across transformation, regulatory, and data-led initiatives.
 
-Join us at FTSE Russell! We’re establishing a team of engineers passionate about data, software craftsmanship, and substantial impact. As a Lead Software Data Engineer, you’ll help power the indices trusted by financial institutions worldwide. You’ll work in a modern AWS environment, build robust pipelines, and collaborate closely with product and business teams to deliver reliable, high-quality data solutions. We care about code quality, ownership, and helping each other grow. If you’re excited about building systems that matter, we’d love to meet you!
 
-WHAT YOU'LL BE DOING:
 
-We are building the next-generation data platform at FTSE Russell — and we want you to shape it with us. Your role will involve:
+At Projective Group, we partner with financial services organisations to solve complex challenges across data, transformation, risk, and payments. As we continue to grow our Data practice, we’re looking for consultants who can span the spectrum from Data Management through using data as a tool to steer better decisions and outcomes.
 
-Designing and developing scalable, testable data pipelines using Python and Apache Spark
 
-Orchestrating data workflows with AWS tools like Glue, EMR Serverless, Lambda, and S3
 
-Applying modern software engineering practices: version control, CI/CD, modular design, and automated testing
+Bring Your Expertise to Life at Projective Group; imagine a day where you:
 
-Contributing to the development of a lakehouse architecture using Apache Iceberg
+Work with clients to understand complex business challenges.
+Translate business needs into clear, structured requirements, guiding technical teams while keeping solutions grounded in real-world context.
+Take ownership of workstreams across data initiatives, from requirements through to delivery support.
+Use tools such as SQL or Python to explore data, validate outputs, and visualise and create compelling outputs to support both business and technical discussions.
+Challenge assumptions, identify improvements, and help design pragmatic, fit-for-purpose solutions.
+Support clients exploring AI adoption, identifying realistic use cases and how these align to their data landscape.
+Build robust relationships with clients and colleagues, contributing to a collaborative and in-person consulting environment.
 
-Collaborating with business teams to translate requirements into data-driven solutions
 
-Building observability into data flows and implementing basic quality checks
+Is this you?
 
-Participating in code reviews, pair programming, and architecture discussions
+Experience within a financial services consultancy, with a track record of delivering on client engagements.
+Comfortable operating between business and technology, engaging stakeholders while working closely with technical teams.
+Solid experience gathering and structuring requirements, with the flexibility to support both business analysis and project delivery.
+Understanding of domains such as banking, capital markets, or insurance, and how data supports decision-making.
+Practical experience with SQL, Python, or low-code tools, using them to support delivery rather than as a pure technical focus.
+Able to manage priorities, take ownership, and adapt across different clients and engagements.
+Naturally inquisitive, confident in asking questions and challenging thinking to add value.
+Degree educated or equivalent experience, with project management exposure or certifications as a plus.
 
-Continuously learning about the financial indices domain and sharing insights with the team
 
-WHAT YOU'LL BRING:
+Why join Projective Group?
 
-Writes clean, maintainable, testable, extensible Python code (ideally with type hints, linters, and tests like pytest)
-
-Understands data engineering basics: batch processing, schema evolution, and building ETL pipelines
-
-Has experience with or is eager to learn Apache Spark for large-scale data processing
-
-Is familiar with the AWS data stack (e.g. S3, Glue, Lambda, EMR)
-
-Strong experience in relational databases (e.g. Aurora PostgreSQL)
-
-Enjoys learning the business context and working closely with stakeholders
-
-Works well in Agile teams and values collaboration over solo heroics
-
-NICE TO HAVES:
-
-It’s great (but not required) if you also bring:
-
-Experience with Apache Iceberg or similar table formats
-
-Familiarity with CI/CD tools like GitLab CI, Jenkins, or GitHub Actions
-
-Exposure to data quality frameworks like Great Expectations or Deequ
-
-Experience with other data platforms like databricks, etc.
-
-Curiosity about financial markets, index data, or investment analytics
+A collaborative environment with no unnecessary organisational structure.
+The opportunity to work across a range of financial services clients and transformation programmes, including regulatory change, data modernisation, and operational improvement initiatives.
+Early exposure to meaningful client work, with the independence to take ownership and contribute from day one.
+A generous training budget, supporting both technical and consulting development.
+A culture focused on pragmatism, collaboration, and delivering meaningful impact.
+Competitive salary, bonus structure, and a comprehensive benefits package including healthcare and pension.
+A London office in the heart of the city, designed to support collaboration and connection.
 
 CURRENT RESUME:
 
@@ -89,25 +77,25 @@ CURRENT RESUME:
 • Designed and developed DBT data models with semantic layers integrating 100+ source systems into a centralised Snowflake warehouse processing 120+ TB of structured and semi-structured data with full schema evolution support.
 • Led end-to-end migration from dbt Core CLI to dbt Fusion, establishing Snowflake target schemas, ELT pipelines, and CI/CD pipelines via GitHub Actions with pytest-driven automated testing suites, reducing deployment failures by 40%.
 • Automated ELT workflows using AWS Lambda event-driven triggers and EMR Serverless Spark jobs with Fivetran connectors on Terraform-provisioned AWS, with feature drift monitoring and observability frameworks ensuring pipeline reliability.
-• Designed and deployed Gen AI model pipelines on an Apache Iceberg lakehouse using MLOps best practices, establishing model deployment pipelines, model registry, experiment tracking, model versioning, and rollback procedures for production AI workloads over Snowflake.
+• Identified and deployed AI use cases as Gen AI model pipelines on an Apache Iceberg lakehouse using MLOps best practices, establishing model deployment pipelines, model registry, experiment tracking, model versioning, and rollback procedures for production AI workloads over Snowflake.
 
 [2] Lead Data Engineer | Castleton Commodities Int. | London | 08/2024 - 04/2025
-• Architected and deployed scalable ELT pipelines in Snowflake, DBT, and AWS/Azure with CDC-based ingestion and Apache Airflow DAG orchestration, supporting Natural Gas and Power trading desks, settlements, and risk functions.
-• Developed near-real-time inference pipelines reading from Aurora PostgreSQL transactional sources and reconciliation transformations for pre-trade market data (prices, positions, exposures, curves) supporting P&L reporting, mark-to-market, and VaR analysis.
-• Built rules-engine-driven data quality checks with pytest-automated validation suites and feature drift monitoring, delivering Power BI dashboards for front-office and risk stakeholders with full transparency into P&L and trade settlements.
-• Provided L3 support and authored technical documentation for all data warehouse changes; developed hotfixes for production incidents and mentored junior developers on data engineering best practices.
-• Integrated regulatory reporting datasets (REMIT, EMIR) into governed data models ensuring full lineage, auditability, and compliance using Terraform-managed infrastructure.
+• Architected and deployed scalable ELT pipelines in Snowflake, DBT, and AWS/Azure with CDC-based ingestion and Apache Airflow DAG orchestration, supporting capital markets Natural Gas and Power trading desks, settlements, and risk functions.
+• Conducted requirements gathering with capital markets trading desk stakeholders to define data specifications for near-real-time inference pipelines from Aurora PostgreSQL transactional sources, supporting P&L reporting, mark-to-market, and VaR analysis.
+• Built data governance and rules-engine-driven data quality checks with pytest-automated validation suites and feature drift monitoring, delivering Power BI dashboards for front-office and risk stakeholders with full transparency into P&L and trade settlements.
+• Provided L3 support, identified AI use cases for trading data enrichment, authored technical documentation for all data warehouse changes, and mentored junior developers on data engineering best practices.
+• Owned the regulatory change workstream end-to-end, integrating REMIT and EMIR datasets into governed data models ensuring full lineage, auditability, and compliance using Terraform-managed infrastructure.
 
 [3] Lead Data Engineer | Sodexo | London | 05/2023 - 01/2024
-• Led CDC-based data ingestion for the AMETA region using Azure ADF, Databricks, PySpark, and Fivetran-style connectors, building observability frameworks that eliminated third-party tools and reduced external app costs by 80%.
-• Reported directly to CTO as Engineering lead for designing and developing the fintech transaction self-service analytics platform, providing reconciliation and rich visual summary of 1M+ daily user decisions.
-• Designed Agile/Scrum-driven data pipelines using Azure Data Factory with an Orchestration framework and Azure Functions, delivering self-service analytics with observability controls and L3 support for the data warehouse.
+• Led CDC-based data ingestion for the AMETA region using Azure ADF, Databricks, PySpark, and Fivetran-style connectors, building data governance and observability frameworks that eliminated third-party tools and reduced external app costs by 80%.
+• Reported directly to CTO as Engineering lead, authoring Business Requirements Documents and designing the fintech transaction self-service analytics platform incorporating AI use cases, providing reconciliation and rich visual summary of 1M+ daily user decisions.
+• Owned the full delivery workstream using Agile/Scrum-driven data pipelines with Azure Data Factory, an Orchestration framework and Azure Functions, delivering self-service analytics with observability controls and L3 support for the data warehouse.
 • Mentored junior developers and led Data Vault 2.0 physical modelling implementation with rules engines for data quality, reducing data redundancy and accelerating SDLC delivery cycles.
 
 [4] Data Engineer | Wherescape USA | (US Remote) | 07/2019 - 05/2023
-• BAT (British American Tobacco) - Implemented Data Migration scripts and Azure Synapse Migration with pytest-driven automated testing suites ensuring 99.9% SLA compliance. Implemented multi-cluster Snowflake warehouses with workload isolation and L3 support.
-• Designed Snowflake external tables on S3 for semi-structured data (JSON, Parquet) with physical modelling best practices, automating deployments via GitHub Actions CI/CD pipelines and integrating IoT/supply-chain feeds via ELT into core analytics.
-• AMD Malaysia - Migrated data warehouse from Informatica to Wherescape using Agile/Scrum methodology. Created SQL transformations from Oracle to SQL Server, built incremental ELT pipeline loading 1B records with 80% efficiency gain.
+• Delivered consulting client engagement for British American Tobacco, implementing Data Migration scripts and Azure Synapse Migration with pytest-driven automated testing suites ensuring 99.9% SLA compliance, with multi-cluster Snowflake warehouses and workload isolation.
+• Owned end-to-end workstream delivery designing Snowflake external tables on S3 for semi-structured data (JSON, Parquet) with physical modelling best practices, automating deployments via GitHub Actions CI/CD pipelines and integrating IoT/supply-chain feeds via ELT.
+• Delivered consulting client engagement for AMD Malaysia, migrating data warehouse from Informatica to Wherescape using Agile/Scrum methodology, creating SQL transformations from Oracle to SQL Server and building incremental ELT pipeline loading 1B records with 80% efficiency gain.
 
 
 Return ONLY a valid JSON object with this exact structure (no markdown, no explanation):
