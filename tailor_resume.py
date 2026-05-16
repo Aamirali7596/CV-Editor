@@ -90,10 +90,10 @@ Return ONLY a valid JSON object with this exact structure (no markdown, no expla
   "skills": {{
     "Programming Languages": "Python, C++, [add from JD if relevant]",
     "Databases": "CosmosDB, MSSQL, NoSQL, SnowSQL, kdb+, SQL Server, Aurora PostgreSQL, [add from JD]",
-    "Cloud Platforms": "AWS (S3, EC2, EMR, EMR Serverless, Glue, Lambda, Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, Terraform, [add from JD]",
-    "Data Engineering Tools": "DBT, PySpark, Kafka, Data Vault 2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, Apache Iceberg, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking, Model Versioning, [add from JD]",
+    "Cloud Platforms": "AWS (S3, EC2, EMR, EMR Serverless, Glue, Lambda, Redshift), Snowflake, Azure (Data Factory, Databricks, Synapse), GCP, BigQuery, Terraform, [add from JD]",
+    "Data Engineering Tools": "DBT, PySpark, Kafka, Data Vault 2.0, CDC, ELT, Looker, Looker API, Apache Airflow (DAGs), Fivetran, Apache Iceberg, MLOps, Model Deployment Pipelines, Model Registry, Experiment Tracking, Model Versioning, Analytics Engineering, LLM Workflows, Multi-Agent Systems, Agentic AI Orchestration, [add from JD]",
     "CI/CD": "Git, GitHub Actions, CI/CD pipelines, Azure Function, Agile/Scrum, Automated Testing, pytest, L3 Support, [add from JD]",
-    "Data techniques": "ETL, ELT, Data Modelling, Physical Modelling, Data Ingestion, Data Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Semantic Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback, [add from JD]"
+    "Data techniques": "ETL, ELT, Data Modelling, Logical Data Modelling, Physical Modelling, Data Ingestion, Data Migration, Streaming, Data Warehousing, Data Analysis, CDC, Reconciliation, Financial Reconciliation, Semantic Layers, Rules Engines, Observability, Self-Service Analytics, Near-Real-Time Inference, Feature Drift Monitoring, Model Rollback, Data Warehouse Cost Optimisation, Operational Automation, Business Logic Migration, Python Automation, [add from JD]"
   }},
   "experience": {{
 {exp_schema}

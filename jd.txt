@@ -1,43 +1,46 @@
-Company : Projective
-We’re hiring multiple Data Consultants across a range of experience levels. Whether you’re already delivering confidently on client engagements or stepping into a more senior role, we’re interested in people who combine financial services knowledge, solid stakeholder skills, and a practical approach to data.
-
-This role is about more than analysis. It’s about working at the intersection of business and technology, helping clients define problems, shape solutions, and deliver meaningful change across transformation, regulatory, and data-led initiatives.
+Company : Trainline 
+At the heart of our Data Team, Data Engineers play a pivotal role by creating pipelines and tables that power impactful dashboards, enable self-service analytics, and support innovative machine learning models and real-time data products.
 
 
-
-At Projective Group, we partner with financial services organisations to solve complex challenges across data, transformation, risk, and payments. As we continue to grow our Data practice, we’re looking for consultants who can span the spectrum from Data Management through using data as a tool to steer better decisions and outcomes.
-
+As a Data Engineer, you will be involved in engineering pipelines that will drive key decisions and give data science powerful datasets to enable and drive new business insights.
 
 
-Bring Your Expertise to Life at Projective Group; imagine a day where you:
+Data Engineers work alongside BI Developers and Data Scientists in cross-functional teams with key impacts and visions. As a department, we strive to give our Data Engineers have high levels of autonomy and freedom to innovate and continually refine their technical and soft skills with clear progression plans and training opportunities with Data Camp!
 
-Work with clients to understand complex business challenges.
-Translate business needs into clear, structured requirements, guiding technical teams while keeping solutions grounded in real-world context.
-Take ownership of workstreams across data initiatives, from requirements through to delivery support.
-Use tools such as SQL or Python to explore data, validate outputs, and visualise and create compelling outputs to support both business and technical discussions.
-Challenge assumptions, identify improvements, and help design pragmatic, fit-for-purpose solutions.
-Support clients exploring AI adoption, identifying realistic use cases and how these align to their data landscape.
-Build robust relationships with clients and colleagues, contributing to a collaborative and in-person consulting environment.
+As a Data Engineer at Trainline, you will... 🚄   
 
+Be key to making our data lake more accessible and insightful breaking down the barriers to access by working on new data marts and designing data models that even the most basic SQL users can use
 
-Is this you?
+Build data pipelines with Spark or DBT
 
-Experience within a financial services consultancy, with a track record of delivering on client engagements.
-Comfortable operating between business and technology, engaging stakeholders while working closely with technical teams.
-Solid experience gathering and structuring requirements, with the flexibility to support both business analysis and project delivery.
-Understanding of domains such as banking, capital markets, or insurance, and how data supports decision-making.
-Practical experience with SQL, Python, or low-code tools, using them to support delivery rather than as a pure technical focus.
-Able to manage priorities, take ownership, and adapt across different clients and engagements.
-Naturally inquisitive, confident in asking questions and challenging thinking to add value.
-Degree educated or equivalent experience, with project management exposure or certifications as a plus.
+Use SQL to transform data into meaningful insights
 
+Build and deploy infrastructure with Terraform
 
-Why join Projective Group?
+Implement DDL, DML with Iceberg
 
-A collaborative environment with no unnecessary organisational structure.
-The opportunity to work across a range of financial services clients and transformation programmes, including regulatory change, data modernisation, and operational improvement initiatives.
-Early exposure to meaningful client work, with the independence to take ownership and contribute from day one.
-A generous training budget, supporting both technical and consulting development.
-A culture focused on pragmatism, collaboration, and delivering meaningful impact.
-Competitive salary, bonus structure, and a comprehensive benefits package including healthcare and pension.
-A London office in the heart of the city, designed to support collaboration and connection.
+Do code reviews for your peers
+
+Orchestrate your pipelines with DAGs on Airflow
+
+Participate in SCRUM ceremonies (standups, backlogs, demos, retros, planning)
+
+Secure data with IAM and AWS Lake formation
+
+Deploy your changes with Jenkins and GitHub actions
+
+We'd love to hear from you if you have... 🔍   
+
+Proven experience as a Data Engineering using SQL and Python
+
+Previous experience with data lakes in AWS, Glue Catalog and Athena (or equivalent)
+
+Good experience with DBT
+
+Capable of using popular data modelling tools to create a diagram of proposed tables to enable discussion
+
+Good communicator and comfortable with presenting ideas and outputs to technical and non-technical users
+
+Worked on Apache Airflow before to create DAGS
+
+Ability to work within Agile, considering minimum viable products, story pointing and sprints

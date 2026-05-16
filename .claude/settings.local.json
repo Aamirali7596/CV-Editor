@@ -5,7 +5,8 @@
       "Bash(git rm:*)",
       "Bash(python:*)",
       "Bash(grep -E \"\\\\.py$|jd/|\\\\.txt$\")",
-      "Bash(pip install:*)"
+      "Bash(pip install:*)",
+      "Bash(del _patch_docx.py)"
     ]
   }
 }
